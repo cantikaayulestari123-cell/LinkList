@@ -19,8 +19,10 @@ public:
         START = NULL;
     }
 
-    void addNode;
+    void addNode()
     {
-        
+        int nim;
+        cout << "\nMasukkan Nomor Mahasiswa : ";
+        cin >> nim;
     }
 }
