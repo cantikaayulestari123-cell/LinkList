@@ -111,9 +111,8 @@ void traverse()
         currentNode = currentNode->next;
     }
 
-    cout << endl;
-} 
-    }
+}
+cout << endl; 
   }
 };
 
@@ -140,6 +139,25 @@ int main()
         case '1':
             mhs.addNode();
             break;
+
+        case '2':
+        if (mhs.listEmpty())
+        {
+            cout << "\nList Kosong" << endl;
+            break;
+        }
+
+        cout << "\nMasukkan no mahasiswa yang akan dihapus : ";
+        cin >> nim;
+
+        if (mhs.delNode(nim) == false)
+            cout << "\nData tidak ditemukan" << endl;
+        else
+            cout << "\nData dengan nomor mahasiswa " << nim << " berhasil dihapus\n";
+        break;
+
+        case '3':
+
         }
     }
 }
